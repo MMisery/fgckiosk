@@ -7,3 +7,7 @@ from charon import app
 
 #Grabbing Person model from models file in same directory
 from .models import Person
+
+@app.route('/')
+def index():
+	return "DEBUG={}".format(current_app.config.get('DEBUG'))
