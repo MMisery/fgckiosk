@@ -1,0 +1,7 @@
+
+
+*.db
+notes.txt
+migrations
+.idea
+*.pyc
