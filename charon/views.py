@@ -11,3 +11,9 @@ from .models import Person
 @app.route('/')
 def index():
 	return "DEBUG={}".format(current_app.config.get('DEBUG'))
+
+@app.route('/punch')
+def punch():
+	error = None
+
+	return render_template('punch.html', error=error)
